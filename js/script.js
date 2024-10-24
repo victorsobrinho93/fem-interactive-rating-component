@@ -24,9 +24,11 @@ function btn(n) {
   return this.button;
 }
 
-for (let i = 1; i <= 5; i++) {
-  $("#rating-btns").append(new btn(i));
-}
+$(document).ready(() => {
+  for (let i = 1; i <= 5; i++) {
+    $("#rating-btns").append(new btn(i));
+  }
+});
 
 $("#submit-btn").on("click", () => {
   $("#container").load("templates.html #template-1", () => {
