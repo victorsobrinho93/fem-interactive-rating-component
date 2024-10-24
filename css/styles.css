@@ -111,8 +111,7 @@ body {
   }
 }
 
-#feedback,
-.rating {
+.feedback {
   background-color: #262f38;
   color: var(--orange);
   padding: 0.5rem;
