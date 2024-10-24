@@ -1,0 +1,124 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-2: hsl(216, 12%, 8%);
+  --db2-low-opacity: hsla(216, 12%, 8%, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--light-grey);
+}
+
+h1 {
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--dark-blue-2);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  height: 100vh;
+}
+
+#container {
+  background-color: #212832;
+  height: 420px;
+  width: 420px;
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+#rating-btns {
+  /* background-color: blue; */
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  background-color: #262f38;
+  color: var(--light-grey);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: var(--orange);
+  color: var(--dark-blue-2);
+}
+
+.selected {
+  background-color: #fff;
+  color: var(--dark-blue-2);
+}
+
+#submit-btn {
+  text-align: center;
+  background-color: var(--orange);
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  color: var(--dark-blue-2);
+}
+
+#submit-btn:hover {
+  background-color: white;
+}
+
+#icon-star {
+  height: auto;
+  max-width: 3rem;
+  background-color: #262f38;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+#template-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2rem;
+  height: 420px;
+  & h1 {
+    padding-bottom: 0;
+  }
+}
+
+#feedback,
+.rating {
+  background-color: #262f38;
+  color: var(--orange);
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+#thank-you-img {
+  height: 7rem;
+}
