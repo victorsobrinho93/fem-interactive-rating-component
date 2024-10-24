@@ -30,6 +30,8 @@ for (let i = 1; i <= 5; i++) {
 
 $("#submit-btn").on("click", () => {
   $("#container").load("templates.html #template-1", () => {
-    $("#feedback").html(`You have selected ${store.value} out of 5.`);
+    $(document).ready(() =>
+      $("#feedback").html(`You have selected ${store.value} out of 5.`)
+    );
   });
 });
