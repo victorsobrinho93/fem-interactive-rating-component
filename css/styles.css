@@ -105,7 +105,8 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 2rem;
-  height: 420px;
+  height: 100%;
+  width: 100%;
   & h1 {
     padding-bottom: 0;
   }
@@ -120,4 +121,15 @@ body {
 
 #thank-you-img {
   height: 7rem;
+}
+
+@media (max-width: 960px), (orientation: portrait) {
+  body {
+    width: 100vw;
+    grid-template-columns: 1fr 90% 1fr;
+  }
+  #container {
+    padding: 0.5rem;
+    width: 100%;
+  }
 }
